@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99EBAB95-AFE9-4257-A5E0-551864D41490}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>App0</RootNamespace>
+    <AssemblyName>App0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccess\BaseDataAccess.cs" />
+    <Compile Include="DataAccess\DepartmentDataAccess.cs" />
+    <Compile Include="DataAccess\EventDataAccess.cs" />
+    <Compile Include="DataAccess\EventMemberDataAccess.cs" />
+    <Compile Include="DataAccess\EventWorkerDataAccess.cs" />
+    <Compile Include="DataAccess\FormDataAccess.cs" />
+    <Compile Include="DataAccess\JobDataAccess.cs" />
+    <Compile Include="DataAccess\MemberDataAccess.cs" />
+    <Compile Include="DataAccess\StatusDataAccess.cs" />
+    <Compile Include="DataAccess\WorkerDataAccess.cs" />
+    <Compile Include="Forms\DepartmentAddEdtDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DepartmentAddEdtDialog.Designer.cs">
+      <DependentUpon>DepartmentAddEdtDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventAddEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventAddEditDialog.Designer.cs">
+      <DependentUpon>EventAddEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventMemberAddEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventMemberAddEditDialog.Designer.cs">
+      <DependentUpon>EventMemberAddEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventMemberSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventMemberSearchDialog.Designer.cs">
+      <DependentUpon>EventMemberSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventSearchDialog.Designer.cs">
+      <DependentUpon>EventSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventWorkerAddEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventWorkerAddEditDialog.Designer.cs">
+      <DependentUpon>EventWorkerAddEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventWorkerSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventWorkerSearchDialog.Designer.cs">
+      <DependentUpon>EventWorkerSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddEdtDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddEdtDialog.Designer.cs">
+      <DependentUpon>FormAddEdtDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JobAddEdtDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\JobAddEdtDialog.Designer.cs">
+      <DependentUpon>JobAddEdtDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MemberAddEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberAddEditDialog.Designer.cs">
+      <DependentUpon>MemberAddEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MemberSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberSearchDialog.Designer.cs">
+      <DependentUpon>MemberSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StatusAddEdtDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StatusAddEdtDialog.Designer.cs">
+      <DependentUpon>StatusAddEdtDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WorkerAddEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkerAddEditDialog.Designer.cs">
+      <DependentUpon>WorkerAddEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WorkerSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkerSearchDialog.Designer.cs">
+      <DependentUpon>WorkerSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\EventMember.cs" />
+    <Compile Include="Models\EventWorker.cs" />
+    <Compile Include="Models\EForm.cs" />
+    <Compile Include="Models\Job.cs" />
+    <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\Status.cs" />
+    <Compile Include="Models\Worker.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\DepartmentUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DepartmentUserControl.Designer.cs">
+      <DependentUpon>DepartmentUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EventMemberUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EventMemberUserControl.Designer.cs">
+      <DependentUpon>EventMemberUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EventUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EventUserControl.Designer.cs">
+      <DependentUpon>EventUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EventWorkerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EventWorkerUserControl.Designer.cs">
+      <DependentUpon>EventWorkerUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FormUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FormUserControl.Designer.cs">
+      <DependentUpon>FormUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobUserControl.Designer.cs">
+      <DependentUpon>JobUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MemberUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MemberUserControl.Designer.cs">
+      <DependentUpon>MemberUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StatusUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StatusUserControl.Designer.cs">
+      <DependentUpon>StatusUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkerUserControl.Designer.cs">
+      <DependentUpon>WorkerUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\DepartmentAddEdtDialog.resx">
+      <DependentUpon>DepartmentAddEdtDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventAddEditDialog.resx">
+      <DependentUpon>EventAddEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventMemberAddEditDialog.resx">
+      <DependentUpon>EventMemberAddEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventMemberSearchDialog.resx">
+      <DependentUpon>EventMemberSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventSearchDialog.resx">
+      <DependentUpon>EventSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventWorkerAddEditDialog.resx">
+      <DependentUpon>EventWorkerAddEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventWorkerSearchDialog.resx">
+      <DependentUpon>EventWorkerSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddEdtDialog.resx">
+      <DependentUpon>FormAddEdtDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JobAddEdtDialog.resx">
+      <DependentUpon>JobAddEdtDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberAddEditDialog.resx">
+      <DependentUpon>MemberAddEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberSearchDialog.resx">
+      <DependentUpon>MemberSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StatusAddEdtDialog.resx">
+      <DependentUpon>StatusAddEdtDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkerAddEditDialog.resx">
+      <DependentUpon>WorkerAddEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkerSearchDialog.resx">
+      <DependentUpon>WorkerSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\DepartmentUserControl.resx">
+      <DependentUpon>DepartmentUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EventMemberUserControl.resx">
+      <DependentUpon>EventMemberUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EventUserControl.resx">
+      <DependentUpon>EventUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EventWorkerUserControl.resx">
+      <DependentUpon>EventWorkerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FormUserControl.resx">
+      <DependentUpon>FormUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\JobUserControl.resx">
+      <DependentUpon>JobUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MemberUserControl.resx">
+      <DependentUpon>MemberUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StatusUserControl.resx">
+      <DependentUpon>StatusUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WorkerUserControl.resx">
+      <DependentUpon>WorkerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
